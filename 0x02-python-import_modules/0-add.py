@@ -4,3 +4,9 @@ if __name__ == "__main__":
     a = 1
     b = 2
     print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+
+    © 2022 GitHub, Inc.
+
+    Terms
+    Privacy
+    Securit
