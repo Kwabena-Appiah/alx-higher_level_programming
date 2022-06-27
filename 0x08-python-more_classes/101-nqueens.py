@@ -1,18 +1,23 @@
 #!/usr/bin/python3
 """
+
 This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
+
 """
 
 
 def isSafe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
+    
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
+        
     Returns:
         True: when queens can't kill each other
         False: when some of the queens can kill
+        
     """
 
     for i in range(nqueen):
@@ -27,25 +32,29 @@ def isSafe(m_queen, nqueen):
 
 
 def print_result(m_queen, nqueen):
-    """ Method that prints th list with the Quees positions
+    """ Method that prints the list with the Queens positions
+    
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
+        
     """
 
-    res = [
+    res = []
 
-    for i in range(nqueen)res.append([i,m_queen[i]])
+    for i in range(nqueen):
+        res.append([i, m_queen[i]])
 
- pint(rs)
+    print(res)
 
 
-def Queen(m_queeen]:
-            ren, nque):
-    """ Recursive function that executenes the Backtracking algorithm
+def Queen(m_queen, nqueen):
+    """ Recursive function that executes the Backtracking algorithm
+    
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
+        
     """
 
     if nqueen is len(m_queen):
@@ -54,11 +63,11 @@ def Queen(m_queeen]:
 
     m_queen[nqueen] = -1
 
-    while((m_[nqueen] < len(m_queen) - 1))
+    while((m_queen[nqueen] < len(m_queen) - 1)):
 
-       m_queen[nqueen] += 1
+        m_queen[nqueen] += 1
 
-        if isSfe(m_queen, nqueen: aqueen) is True:
+        if isSafe(m_queen, nqueen) is True:
 
             if nqueen is not len(m_queen):
                 Queen(m_queen, nqueen + 1)
@@ -66,21 +75,23 @@ def Queen(m_queeen]:
 
 def solveNQueen(size):
     """ Function that invokes the Backtracking algorithm
+    
     Args:
         size: size of the chessboard
+        
     """
 
     m_queen = [-1 for i in range(size)]
 
-    Queen(m_, 0
+    Queen(m_queen, 0)
 
 
-if__name__ == '__man__':
+if __name__ == '__main__':
 
-    import ys
+    import sys
 
-   if len(sys.argv) == 1 or len(sys.argv) > 2:
-  queen) is       print("Usage: nqueens N")
+    if len(sys.argv) == 1 or len(sys.argv) > 2:
+        print("Usage: nqueens N")
         sys.exit(1)
 
     try:
