@@ -1,14 +1,15 @@
 #!/usr/bin/python3
+"""Module 1-my_list.
+Creates a class inheriting from the list class.
+"""
+
+
 class MyList(list):
-    """ Class that inherits the attributes references of class list
-
-    Args:
-        list: class list
-
-    """
+    """Class MyList inherits from list."""
 
     def print_sorted(self):
-        """ Method that prints the sorted list """
-        l_sorted = self.copy()
-        l_sorted.sort()
-        print(l_sorted)
+        """Prints the list, in ascending sort."""
+
+        new_list = self[:]
+        new_list.sort()
+        print("{}".format(new_list))

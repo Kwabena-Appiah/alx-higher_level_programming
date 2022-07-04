@@ -1,25 +1,20 @@
-# Inheritance
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about inheritance, superclass, baseclass and subclass in **Python**.
+# 0x0A. Python - Inheritance
 
-## Technologies
-* Python Scripts are written with Python 3.4.3
-* C files are compiled using `gcc 4.8.4`
-* Tested on Ubuntu 14.04 LTS
+## Table of Contents
 
-## Files
-| Filename | Description |
-| -------- | ----------- |
-| `0-lookup.py` | Function that returns the list of available attributes and methods of an object |
-| `1-my_list.py` | Class `MyList` that inhertis from `list` |
-| `2-is_same_class.py` | Function that returns `True` if the object is exactly an instance of the specified class; otherwise `False` |
-| `3-is_kind_of_class.py` | Function that returns `True` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class |
-| `4-inherits_from.py` | Function that returns `True` if the object is an instance of a class that inherited from the specified class |
-| `5-base_geometry.py` | Empty class `BaseGeometry` |
-| `6-base_geometry.py` | Class `BaseGeometry` with public instance method `def area(self):` |
-| `7-base_geometry.py` | Class `BaseGeometry` with public instance method that verifies if the input arg is an integer |
-| `8-rectangle.py` | Class `Rectangle` that inhertis from `BaseGeometry` |
-| `9-rectangle.py` | Class `Rectangle` that inhertis from `BaseGeometry`, with `area()` method implemented |
-| `10-square.py` | Class `Square` that inherits from `Rectangle` |
-| `11-square.py` | Class `Square` that inherits from `Rectangle`, with `str()` method |
-| `100-my_int.py` | Class `MyInt` that inhertis from `int`. Its `==` and `!=` operators are inverted |
-| `101-add_attribute.py` | Function that adds a new attribute to an object if it's possible |
+Files | Description
+----- | -----------
+[0-lookup.py](./0-lookup.py) | Python function that returns the list of available attributes and methods of an object
+[1-my_list.py](./1-my_list.py) | Python class MyList that inherits from list
+[2-is_same_class.py](./2-is_same_class.py) | Python function that returns True if the object is exactly an instance of the specified class ; otherwise False
+[3-is_kind_of_class.py](./3-is_kind_of_class.py) | Python function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False
+[4-inherits_from.py](./4-inherits_from.py) | Python function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False
+[5-base_geometry.py](./5-base_geometry.py) | Python empty class BaseGeometry
+[6-base_geometry.py](./6-base_geometry.py) | Python class BaseGeometry (based on 5-base_geometry.py)
+[7-base_geometry.py](./7-base_geometry.py) | Python class BaseGeometry (based on 6-base_geometry.py)
+[8-rectangle.py](./8-rectangle.py) | Python class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
+[9-rectangle.py](./9-rectangle.py) | Python class Rectangle that inherits from BaseGeometry (7-base_geometry.py) (task based on 8-rectangle.py)
+[10-square.py](./10-square.py) | Python class Square that inherits from Rectangle (9-rectangle.py)
+[11-square.py](./11-square.py) | Python class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py)
+[100-my_int.py](./100-my_int.py) | Python class MyInt that inherits from int
+[101-add_attribute.py](./101-add_attribute.py) | Python function that adds a new attribute to an object if it’s possible
